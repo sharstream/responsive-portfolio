@@ -1,132 +1,177 @@
-body {
-    background: url(../images/background.jpg);
-}
+/* MEDIA QUERIES RESPONSIVE LAYOUT */
+@media screen and (max-width: 2400px) {
+    body {
+        font-family:"Open Sans", Helvetica, Arial, sans-serif;
+        font-weight:300;
+        font-size: 12px;
+        line-height:30px;
+        color:#777;
+        background: url(../images/background.jpg);
+    }
 
-.border {
-    background-color: grey;
-    width: 95%;
-    height: 2px;
-}
+    .border {
+        background-color: grey;
+        width: 95%;
+        height: 2px;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-h1, h2{
-    color: seagreen;
-    text-align: center;
-}
+    h1{
+        color: seagreen;
+        text-align: center;
+    }
 
-header {
-    position:relative;
-    display:block;
-    max-width:100%;
-    height:100%;
-    margin:0 auto;
-    padding:1rem 5rem;
-    background:white;
-    color:#fff;
-}
-header h1 {
-    line-height: 45px;
-    font-size: 2rem;
-    margin: 0;
-    display:inline;
-}
-nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    float:right;
-    display:inline;
-}
+    h2{
+        color: seagreen;
+        text-align: center;
+        font-size: 15px;
+    }
 
-nav  li {
-    position:relative;
-    display:inline-block;
-    list-style-type: none;
-    font-family: "Open Sans", "Droid Sans", Helvetica, Arial, sans-serif;
-    color: #222;
-    padding:0 1rem;
-}
-nav li > a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-}
-nav > li > a:hover,
-nav > li > a:focus {
-    text-decoration: none;
-    background-color: #eee;
-}
+    header {
+        position:relative;
+        display:block;
+        max-width:100%;
+        height:100%;
+        margin:0 auto;
+        padding:1rem 5rem;
+        background:white;
+        color:#fff;
+    }
+    header h1 {
+        line-height: 45px;
+        font-size: 2rem;
+        margin: 0;
+        display: inline;
+        color: seagreen;
+    }
+    nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        float:right;
+        display:inline;
+    }
 
-.top_container{
-    background-color: white;
-    width: 60%;
-    height: 800px;
-    float: left;
-    margin-top: 50px;
-    margin-left: 45px;
-}
+    nav  li {
+        position:relative;
+        display:inline-block;
+        list-style-type: none;
+        color: #222;
+        padding:0 1rem;
+    }
+    nav li > a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+    }
+    nav > li > a:hover,
+    nav > li > a:focus {
+        text-decoration: none;
+        background-color: #eee;
+    }
 
-.images {
-    margin-top: 20px
-}
+    .top_container{
+        background-color: white;
+        width: 60%;
+        height: 800px;
+        float: left;
+        margin-top: 50px;
+        margin-left: 45px;
+    }
 
-.keeptogether {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: 0;
-    word-spacing: -4px;
-}
+    .borderconnect {
+        background-color: grey;
+        height: 2px;
+        width: 60%;
+        margin-left: 45px;
+    }
 
-.borderconnect {
-    background-color: grey;
-    height: 2px;
-    width: 60%;
-    margin-left: 45px;
-}
+    .connect {
+        background-color: white;
+    }
 
-.connect {
-    background-color: white;
-}
+    .rigth_container {
+        /* padding-top: 10px; */
+        display: inline;
+        float: left;
+        width: 250px;
+        margin-left: 35px;
+        margin-top: 31px;
+    }
 
-.rigth_container {
-    /* padding-top: 10px; */
-    display: inline;
-    float: left;
-    width: 250px;
-    margin-left: 35px;
-    margin-top: 31px;
-}
+    #logo {
+        align-items: center;
+        margin-left: 40px;
+        margin-right: auto;
+        margin-top: 23px;
+    }
 
-#logo {
-    align-items: center;
-    margin-left: 40px;
-    margin-right: auto;
-    margin-top: 23px;
+    .img1 {
+        width:65%; 
+        height:auto;
+    }
+
+    .img {
+        width:20%; 
+        height:auto; 
+    }
+
+    #border {
+        background-color: seagreen;
+        width: auto;
+        height: 8px;
+        margin-top: 20px;
+    }
+
+    footer {
+        background-color: slategray;
+        color: white;
+        height: 100px;
+        justify-content: center;
+        display: flex;
+        width: auto;
+    }
+
+    .foot {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /* Additional Screen Sizes */
 
 /* Width at 980px and below */
 @media screen and (max-width: 960px) {
-	#container, footer {
-		width: 758px;
+	.top_container {
+        width: 700px;
+        height: 2950px;
 	}
-	
-	#content {
-		margin: 0 20px 0 0;
-	}
-	h3 {
-        text-align: left;
+
+	h2, h3 {
+        /* text-align: left; */
+        /* font-weight: 300; */
+        font-size: 12px;
+        /* line-height: 30px; */
+        margin-top: 0px;
     }
+
 	.connect {
-        width: 100%;
-        margin-top: 20px;
+        width: auto;
+        /* margin-top: 20px; */
+        margin-bottom: 121px;
         margin-left: 1px;
         padding: 25px;
+    }
+
+    .img1 {
+        width:65%; 
+        height:auto;
     }
 
     .img {
@@ -143,10 +188,8 @@ nav > li > a:focus {
 
     #logo {
         display: block;
-    }
-
-    #connect section {
-        clear: left;
+        margin-top: 2px;
+        margin-left: 1px;
     }
 }
 
@@ -157,15 +200,12 @@ nav > li > a:focus {
   #container, footer {
 		width: 758px;
 	}
-	
-	#content {
-		margin: 0 20px 0 0;
-	}
+
 	h3 {
         text-align: left;
     }
 	.connect {
-        width: 100%;
+        width: auto;
         margin-top: 20px;
         margin-left: 1px;
         padding: 25px;
@@ -182,27 +222,32 @@ nav > li > a:focus {
 
     #logo {
         display: block;
+        margin-top: 2px;
+        margin-left: 1px;
     }
 
-    #connect section {
-        clear: left;
-    }
 }
 
 /* Width at 640px and below */
 @media screen and (max-width: 640px) {
-  #container, footer {
+
+    header {
+        position:static;
+    }
+
+    nav, a{
+        background-color: white;
+    }
+
+    #container, footer {
 		width: 758px;
 	}
 	
-	#content {
-		margin: 0 20px 0 0;
-	}
-	h3 {
+	h2, h3 {
         text-align: left;
     }
 	.connect {
-        width: 100%;
+        width: auto;
         margin-top: 20px;
         margin-left: 1px;
         padding: 25px;
@@ -215,9 +260,7 @@ nav > li > a:focus {
 
     #logo {
         display: block;
-    }
-
-    #connect section {
-        clear: left;
+        margin-top: 2px;
+        margin-left: 1px;
     }
 }

@@ -185,6 +185,15 @@
         margin-top: 2px;
         margin-left: 1px;
     }
+
+    footer {
+        background-color: slategray;
+        color: white;
+        height: 100px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
 }
 
 /* Additional Screen Sizes */
@@ -214,6 +223,15 @@
         display: block;
         margin-top: 2px;
         margin-left: 1px;
+    }
+
+    footer {
+        background-color: slategray;
+        color: white;
+        height: 100px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
     }
 }
 
